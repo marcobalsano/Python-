@@ -28,10 +28,8 @@ for targa, dati in diz.items():
 print(f"la somma di tutti i km è: {somma}")
 #7
 print(diz["CD456FF"])
-print(diz["CD456FF"][0][2])
-y=(diz["CD456FF"][0][2])
+x=diz["CD456FF"][i-1][2]
 for i in range (4):
-  if(diz["CD456FF"][i][2])>y:
-    oo=i
-print(oo)
-print(diz["CD456FF"][oo][2])
+  if(diz["CD456FF"][i][2])>x:
+    y=diz["CD456FF"][i]
+print(f"il mese in cui sono stati fatti più km per la macchina targata CD456FF è stato: {y}")
